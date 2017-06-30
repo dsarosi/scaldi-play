@@ -19,6 +19,12 @@ final class ScaldiApplicationBuilder(
 ) extends ScaldiBuilder[ScaldiApplicationBuilder](environment, configuration, modules, disabled) {
   def this() = this(environment = Environment.simple())
 
+  val GlobalAppConfigKey = "play.allowGlobalApplication"
+  /**
+    * Sets the configuration key to enable/disable global application state
+    */
+  def globalApp(enabled: Boolean): ScaldiApplicationBuilder =
+    configure(GlobalAppConfigKey -> enabled)
   /**
    * Set the initial configuration loader.
    * Overrides the default or any previously configured values.

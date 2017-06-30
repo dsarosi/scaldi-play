@@ -11,7 +11,7 @@ scalacOptions ++= Seq("-deprecation", "-feature")
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
 testOptions in Test += Tests.Argument("-oDF")
 
-val playVersion = "2.6.0-RC2"
+val playVersion = "2.6.0"
 val slickVersion = "3.0.0-M3"
 
 libraryDependencies ++= Seq(
