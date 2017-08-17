@@ -1,6 +1,6 @@
 name := "scaldi-play"
 organization := "org.scaldi"
-version := "0.5.16-SNAPSHOT"
+version := "0.5.16-RC2"
 
 description := "Scaldi-Play - Scaldi integration for Play framework"
 homepage := Some(url("http://scaldi.org"))
@@ -11,8 +11,8 @@ scalacOptions ++= Seq("-deprecation", "-feature")
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
 testOptions in Test += Tests.Argument("-oDF")
 
-val playVersion = "2.6.0"
-val slickVersion = "3.0.0-M3"
+val playVersion = "2.6.3"
+val slickVersion = "3.0.1"
 
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play" % playVersion % "provided",
